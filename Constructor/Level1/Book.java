@@ -20,14 +20,13 @@ class Book{
 	public double getPrice(){return price;}
 
 	public static void main(String[] args) {
-        // Using default constructor
+       
         	Book defaultBook = new Book();
         	System.out.println("Default Book:");
         	System.out.println("Title: " + defaultBook.getTitle());
         	System.out.println("Author: " + defaultBook.getAuthor());
         	System.out.println("Price: " + defaultBook.getPrice());
-
-        // Using parameterized constructor
+																				
         	Book customBook = new Book("The Alchemist", "Paulo Coelho", 399.0);
         	System.out.println("\nCustom Book:");
         	System.out.println("Title: " + customBook.getTitle());
