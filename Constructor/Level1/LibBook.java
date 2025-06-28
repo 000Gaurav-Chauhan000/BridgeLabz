@@ -4,7 +4,6 @@ public class LibBook {
     private double price;
     private boolean isAvailable;
 
-    // Constructor
     public LibBook(String title, String author, double price) {
         this.title = title;
         this.author = author;
@@ -12,7 +11,6 @@ public class LibBook {
         this.isAvailable = true;
     }
 
-    // Borrow method
     public boolean borrowBook() {
         if (isAvailable) {
             isAvailable = false;
