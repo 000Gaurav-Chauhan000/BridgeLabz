@@ -3,7 +3,6 @@ public class CarRental {
     private String carModel;
     private int rentalDays;
 
-    // Constructors
     public CarRental() {
         this("Unknown", "Sedan", 1);
     }
@@ -14,7 +13,6 @@ public class CarRental {
         this.rentalDays = rentalDays;
     }
 
-    // Calculate cost
     public double calculateCost() {
         double ratePerDay = switch (carModel.toLowerCase()) {
             case "suv" -> 1000.0;
